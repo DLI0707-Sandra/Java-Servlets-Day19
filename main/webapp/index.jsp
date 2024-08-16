@@ -1,3 +1,8 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSP - Hello World</title>
 <html>
 <head>
 <style>
@@ -19,10 +24,11 @@ body {
 </style>
 </head>
 <body>
-<h2>Current Date and Time:</h2>
-    <%
-        java.util.Date date = new java.util.Date();
-        out.println(date.toString());
-    %>
+<form action="get_email" method="post">
+    <label for="username">Email</label>
+    <input type="text" id="userName" name="userName" required>
+    <br/><br/>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>

@@ -9,8 +9,8 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-@WebServlet(name="greeting",value = "/greeting")
-public class GreetingServlet extends HttpServlet{
+@WebServlet(name="email",value = "/get_email")
+public class FormServlet extends HttpServlet{
 
     private String message;
 
