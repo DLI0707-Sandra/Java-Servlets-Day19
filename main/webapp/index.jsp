@@ -3,8 +3,10 @@
 <html>
 <head>
   <title>JSP - Hello World</title>
-  <style>
-    body {
+<html>
+<head>
+<style>
+body {
       font-family: Arial, sans-serif;
       background-color: #f4f4f4;
       display: flex;
@@ -13,10 +15,23 @@
       height: 100vh;
       margin: 0;
     }
-  </style>
+    button
+    {
+    border:unset;
+    background-color:black;
+    color:white;
+    }
+</style>
 </head>
 <body>
-<%--<h1>"Hello World!"</h1>--%>
-<%--<a href="hello-servlet">Hello Servlet</a>--%>
+<form action="greeting" method="post">
+    <label for="username">Username</label>
+    <input type="text" id="userName" name="userName" required>
+    <%--
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" required>--%>
+    <br/><br/>
+    <button type="submit">Enter</button>
+  </form>
 </body>
 </html>
